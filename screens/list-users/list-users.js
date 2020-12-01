@@ -31,7 +31,7 @@ function ListUser({ navigation }) {
             data={users}
             renderItem={({ item }) =>
                     <TouchableOpacity >
-                        <Text>component</Text>
+                        <CardComponent user={item} />
                     </TouchableOpacity>}
             keyExtractor={item => item.id}
             </FlatList>
